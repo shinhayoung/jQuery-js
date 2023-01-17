@@ -1,0 +1,68 @@
+/* Reset */
+body, dl, dt, dd{
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+/* Layout */
+.l_wrapper {
+  width: 800px;
+  margin: 50px auto;
+}
+
+/* typography */
+:root {
+  font-size: 62.5%;
+  word-break: keep-all;
+}
+
+/* components */
+body {
+  background-color: #ddd;
+}
+
+.accordion-title {
+  padding: 15px;
+  font-size: 2.4rem;
+  font-family: 'Noto Serif HK', serif;
+  font-weight: 700;
+  color: #666;
+  text-align: right;
+  background-color: rgb(240, 240, 240);
+  background-image: url(images/sprite.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.accordion-title:last-child {
+  border-bottom: none;
+}
+
+.accordion-title-click {
+  background-color: #fff;
+  background-position: 0 -60px;
+}
+
+.accordion-title-blue.show   {color: cornflowerblue;}
+.accordion-title-pink.show   {color: palevioletred;}
+.accordion-title-red.show    {color: red;}
+.accordion-title-orange.show {color: orange;}
+
+.accordion-contents {
+  display: none;
+  font-size: 1.4rem;
+  background-color: #fff;
+  padding: 20px;
+  font-family: initial;
+  font-weight: 600;
+  color: #999;
+  text-align: left;
+  line-height: 2.0rem;
+}

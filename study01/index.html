@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Modals</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Ubuntu:wght@300;400;500;700&display=swap"
+		rel="stylesheet">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+	<div class="banner">
+		<div class="l_wrapper">
+			<div class="notice">
+				<p>
+					Notice: Lorem Ipsum is simply dummy text of the printing and typesetting
+				</p>
+				<div class="notice-img">
+						<img class="notice-img-src" src="images/close.png">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<main class="main">
+		<div class="l_wrapper">
+			<h1>
+				Architectural &<br>
+				Acoustic Solutions
+			</h1>
+			<button class="is_button open">
+					OPEN WORLD
+			</button>
+		</div>
+	</main>
+
+  <div class="bglayer">bglayer</div>
+	<div class="card">
+		<p>
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+			standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+			type specimen book.
+		</p>
+		<div class="card-click">
+			<button class="is_button close">
+					Confirm
+			</button>
+		</div>
+	</div>
+
+	<script>
+
+		$(function () {
+			$(".banner").slideDown(400);
+			$(".notice-img").click(function () {
+				$(".banner").slideUp(400);
+			});
+			$(".open").click(function () {
+				$(".card").fadeIn(400);
+				$(".bglayer").fadeIn();
+			});
+			$(".close").click(function () {
+				$(".card").fadeOut(400)
+				$(".bglayer").fadeOut();
+			})
+		});
+		
+	</script>
+</body>
+
+</html>

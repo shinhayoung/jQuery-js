@@ -1,0 +1,70 @@
+/* Reset */
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Components */
+.container {
+  width: 600px;
+  margin: 20vh auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.container-cover {
+  border-bottom: 5px solid #000;
+  height: 200px;
+}
+
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  bottom: 0;
+}
+
+.item-src {
+  position: relative;
+  bottom: 0;
+}
+
+.item-src.show {
+  bottom: 200px;
+}
+
+.container-button {
+  height: 200px;
+  z-index: 1;
+  background-color: #fff;
+}
+
+.button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 40px;
+}
+
+.button li {
+  color: #ccc;
+  border: 3px solid;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.button li.is_active {
+  color: #000;
+}

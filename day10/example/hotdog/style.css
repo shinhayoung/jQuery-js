@@ -1,0 +1,103 @@
+h1, p{
+    margin: 0;
+}
+
+img {
+    vertical-align: top;
+}
+
+body {
+    background-color: #ddd;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.box {
+    background-color: white;
+    float: left;
+    width: 300px;
+    margin: 10px;
+}
+
+.box .cover {
+    width: 100%;
+    margin-bottom: -50px;
+}
+
+.box.hotdog h1,
+.box.hotdog p strong {
+    color: #ff6600;
+}
+
+.box.burger h1,
+.box.burger p strong {
+    color: orange;
+}
+
+.box.pizza h1,
+.box.pizza p strong {
+    color: #bfc624;
+}
+
+.box h1 {
+    background-color: rgba(0,0,0,0.9);
+    color: orange;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    border-top-right-radius: 10px;
+}
+
+.box p {
+    color: #bbb;
+    line-height: 1.4;
+    padding: 20px;
+    height: 120px;
+}
+
+.box p strong {
+    color: #ff6600;
+}
+
+.tags {
+    padding: 20px;
+    line-height: 2.1;
+    background-color: #efefef;
+    font-size: 10px;
+}
+
+.tags .tag {
+    white-space: nowrap;
+    background-color: #ff6600;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-right: 3px;
+}
+
+.tags .tag:before {
+    content: '#';
+    margin-right: 3px;
+}
+
+.tags .tag:hover {
+    background-color: deepskyblue;
+}
+
+.box.hotdog .tags .tag {
+    background-color: #ff660;
+}
+
+.box.burger .tags .tag {
+    background-color: orange;
+}
+
+.box.pizza .tags .tag {
+    background-color: #bfc624; 
+}

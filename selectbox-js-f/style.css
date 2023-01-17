@@ -1,0 +1,86 @@
+/* Reset */
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+/* Components */
+body {
+  background-image: url(images/bg.png);
+  background-position: 0 0;
+  background-size: cover;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 500px;
+  margin: 0 auto;
+  border-radius: 0 0 40px 40px;
+  padding: 30px;
+}
+
+.container-cover {
+  display: flex;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.container-cover-src {
+  border-radius: 50%;
+  border: 5px solid transparent;
+  opacity: 30%;
+}
+
+.container-cover-src.highlight {
+  border: 5px solid cornflowerblue;
+  opacity: 100%;
+}
+
+.container-contents {
+  margin-top: 30px;
+}
+
+.title {
+  background-color: #fff;
+  border-radius: 20px;
+  color: orangered;
+  text-indent: 35px;
+  background-image: url(images/play.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.music {
+  color: #999;
+  padding: 10px 45px 0;
+  display: none;
+}
+
+.music li {
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.music li:hover {
+  color: #fff;
+}
+
+

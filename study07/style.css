@@ -1,0 +1,70 @@
+/*Reset*/
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+/*Layout*/
+.l_wrapper {
+  width: 600px;
+  margin: 50px auto;
+}
+
+/*Components*/
+body {
+  background-color: #000;
+}
+
+.graph li {
+  display: flex;
+}
+
+.graph-cover {
+  width: 70px;
+  height: auto;
+}
+
+.graph-contents {
+  flex-grow: 1;
+}
+
+.graph-contents-name {
+  background-color: #222;
+  height: 30px;
+  text-indent: 10px;
+  line-height: 30px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.graph-contents-percent {
+  background-color: #333;
+  height: 30px;
+  border-top: 1px solid #666;
+  border-radius: 0 0 5px 5px;
+}
+
+.graph-contents-percent span {
+  display: block;
+  width: 0;
+  text-align: right;
+  height: 100%;
+  line-height: 30px;
+  font-size: 12px;
+  border-radius: 0 4px 4px 0;
+  letter-spacing: 0.2em;
+  color: #fff;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+

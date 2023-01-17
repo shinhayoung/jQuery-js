@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    padding: 0;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    appearance: none;
+    border: 0;
+    background-color: transparent;
+}
+
+body {
+	background-color: #fff1c6;
+	background-attachment: fixed;
+	background-image: url(images/bg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.controls {
+	width: 300px;
+	height: 420px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}
+
+.sunban {
+    width: 780px;
+    margin: 50px auto;
+}
+
+.sunban-item {
+	height: 150px;
+    margin-bottom: 50px;
+	background-image: url(images/sunban.png);	
+	background-repeat: no-repeat;
+	background-position: center bottom;
+    display: flex;
+    align-items: flex-end;
+	cursor: pointer;
+}
+
+.sunban-item img {
+    margin-bottom: 20px;
+    position: relative;
+    top: 0;
+    opacity: 1;
+}
+
+.sunban-item img.die {
+    opacity: 0;
+    top: -400px;
+}
+
+.money-item {
+    display: block;
+	cursor: pointer;
+    position: relative;
+    left: 0;
+    opacity: 1;
+}
+
+.money-item.paid {
+    left: 100vw;
+    opacity: 0;
+}
+
+.gun {
+	width: 300px;
+	height: 250px;
+	background-image: url(images/gun.png);
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+	cursor: pointer;
+} 
+
+.gun:active {
+	background-position: bottom;
+}

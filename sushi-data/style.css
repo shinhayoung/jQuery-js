@@ -1,0 +1,86 @@
+body, h1, ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+	text-decoration: inherit;
+}
+
+button {
+    font-family: inherit;
+    font-size: inherit;
+    appearance: none;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+img {
+	vertical-align: top;
+}
+
+body {
+    background-color: #fff;
+}
+
+.header {
+    width: 200px;
+    height: 200px;
+    background-image: url(images/logo.png);
+    margin: 50px auto;
+    text-indent: -9999px;
+    position: relative;
+}
+
+.header button {
+    display: block;
+    width: 70px;
+    height: 100px;
+    background-image: url(images/arr-sprite.png);
+    text-indent: -9999px; 
+    opacity: 0.5;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    margin: 0 -140px;
+}
+
+.header button.prev { left: 0;  background-position: left; }
+.header button.next { right: 0; background-position: right; }
+
+.header button:hover {
+    opacity: 1;
+}
+
+.sushi {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+}
+
+.sushi-list {
+    display: flex;
+}
+
+.sushi-list li {
+
+}
+
+.sushi-name {
+    width: 70px;
+    margin: 15px;
+    text-align: center;
+    line-height: 50px;
+    z-index: 999;
+    font-size: 20px;
+    color: red;
+    border-bottom: 3px solid red;
+    font-family: 'Dosis', sans-serif;
+}

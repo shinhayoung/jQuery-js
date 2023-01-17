@@ -1,0 +1,137 @@
+/* Reset */
+body, ul, p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* Layout */
+.l_wrapper {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Typography */
+:root {
+  font-size: 62.5%;
+}
+
+/* Components */
+body {
+  background-image: url(images/bg.png);
+}
+
+.header-cover {
+  background-color: #333;
+}
+
+.header-logo {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+}
+
+.gnb {
+  display: flex;
+  background-color: #000;
+  opacity: 80%;
+  position: absolute;
+  bottom: 0;
+  width: 960px;
+}
+
+.gnb.fixed {
+  position: fixed;
+  top: 0;
+  bottom: auto;
+  z-index: 1;
+}
+
+.gnb li { 
+  color: #999;
+  font-size: 2.0rem;
+}
+
+.gnb li a {
+  display: block;
+  padding: 15px;
+}
+
+.gnb li a:hover {
+  color: #fff;
+}
+
+.gnb li a.active {
+  color: #fff;
+}
+
+.container {
+  background-color: #333;
+  border-top: 1px solid #777;
+  display: flex;
+}
+
+.container-contents {
+  text-align: right;
+  padding: 30px;
+}
+
+.container.ghost, 
+.container.devil {
+  flex-direction: row-reverse;
+  background-color: #222;
+}
+
+.container-contents h1 {
+  font-family: 'Italianno', cursive;
+  font-size: 7.0rem;
+  padding: 30px 0;
+  color: #56fb28;
+}
+
+.container-contents p {
+  color: #999;
+  font-weight: 500;
+  font-size: 1.7rem;
+  line-height: 25px;
+}
+
+.container-cover {
+  width: 50%;
+  height: 500px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.container-cover-src {
+  opacity: 0;
+  position: relative;
+  top: 0;
+  right: 100px;
+}
+
+.container-cover-src.show {
+  opacity: 1;
+  right: 0;
+}

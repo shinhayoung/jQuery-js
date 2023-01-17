@@ -1,0 +1,93 @@
+/*Reset*/
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/*Typography*/
+:root {
+  font-size: 62.5%
+}
+
+/*Components*/
+body {
+  background-image: url(images/bg-subway.png);
+}
+
+.station-background {
+  width: 900px;
+  height: 900px;
+  border: 80px solid #4fb10f;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: -200px auto;
+  position: relative;
+}
+
+.station {
+  width: 700px;
+  height: 500px;
+  background-image: url(images/subway.png);
+  background-position: center;
+  position: relative;
+  margin: 200px auto;
+}
+
+.balloon {
+  width: 200px;
+  height: 90px;
+  background-color: #fff;
+  border: 5px solid #4fb10f;
+  border-radius: 20px;
+  position: relative;
+}
+
+.balloon::after {
+  content: ' ';
+  width: 45px;
+  height: 21px;
+  background-image: url(images/arr-sprite.png);
+  background-position: 0 21px;
+  position: absolute;
+  bottom: -21px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.balloon h1 {
+  background-color: #4fb10f;
+  padding: 12px;
+  font-size: 3.2rem;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+}
+
+.button {
+  background-color: #4fb10f;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+
+.button div {
+  width: 40px;
+  height: 80px;
+  background-image: url(images/nav-arr-sprite.png);
+  cursor: pointer;
+}
+
+.button .next {
+  background-position: 40px 0;
+}

@@ -1,0 +1,50 @@
+h1 {
+    margin: 0;
+}
+
+img {
+    vertical-align: top;
+}
+
+.logo {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 0;
+    height: 0;
+}
+
+.logo.spring {
+    width: 600px;
+    height: 300px;
+}
+
+.logo.up {
+    top: 30%;
+}
+
+.container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+.container h1 {
+    font-weight: normal;
+    font-family: 'lobster';
+    color: #ddd;
+    font-size: 100px;
+    display: none;
+}
+
+.container img {
+    position: relative;
+    top: 200px;
+}
+
+.container img.show {
+    top: 0;
+}

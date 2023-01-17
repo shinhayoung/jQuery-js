@@ -1,0 +1,101 @@
+body, ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+body {
+	background-color: #ddd;
+	background-image: url(images/bg-subway.png);
+}
+
+.station-wrapper {
+	width: 900px;
+	height: 900px;
+	border: 80px solid #4fb10f;
+	margin: 0 auto;
+	border-radius: 100%;	
+	background-color: #fff;
+	position: relative;
+	top: -200px;
+}
+
+.station {
+	width: 700px;
+	height: 500px;
+	margin: 250px auto;
+	background-image: url(images/subway.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+
+.nav {
+	position: absolute;
+	background-color: #4fb10f;
+    left: 0;
+    right: 0;
+	top: 300px;
+	height: 80px;
+}
+
+.nav a {
+	display: block;
+	height: 80px;
+	width: 40px;
+	line-height: 80px;
+	text-indent: -9999px;
+	background-image: url(images/nav-arr-sprite.png);
+	opacity: 0.8;
+}
+
+.nav a:hover {
+	opacity: 1;
+}
+
+.nav a.prev {
+	float: left;
+	margin-left: 200px;
+}
+
+.nav a.next {
+	float: right;
+	background-position: right;
+	margin-right: 200px;
+}
+
+.tooltip {
+	width: 200px;
+	height: 90px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	box-shadow: 0 0 10px #666;
+	background-color: #fff;
+	border-radius: 20px;
+	border: 5px solid #4fb10f;
+}
+
+.tooltip h1 {
+	text-align: center;
+	background-color: #4fb10f;
+	color: #fff;
+	padding: 13px;
+	margin: 0;
+}
+
+.tooltip::after {
+    content: ' ';
+	display: block;
+	width: 43px;
+	height: 21px;
+	background-image: url(images/arr-sprite.png);	
+	background-position: left bottom;
+	position: absolute;
+	bottom: -21px;
+	left: 50%;
+	margin-left: -21px;	
+}

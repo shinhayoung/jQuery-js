@@ -1,0 +1,140 @@
+/*Reset*/
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*Layout*/
+.l_wrapper {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/*Typography*/
+:root {
+  font-size: 62.5%;
+}
+
+/*Components*/
+body {
+  background-color: #c6352d;
+}
+
+.header {
+  background-color: #212121;
+  overflow: hidden;
+}
+
+.header-logo {
+  margin: 20px 0;
+}
+
+.container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.container-item {
+  flex-shrink: 0;
+  position: relative;
+  bottom: -30px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  opacity: 0;
+}
+
+.container-item.show {
+  opacity: 100%;
+}
+
+.container-item.active, 
+.container-item:hover {
+  bottom: 0;
+}
+
+.container-item.ironman    {right: -140px;}
+.container-item.captain    {right: -100px;}
+.container-item.blackwidow {left: -230px;}
+.container-item.thor       {left: -190px;}
+
+.hero-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero-shadow.select {
+  opacity: 0;
+}
+
+.heroname { 
+  position: absolute;
+  bottom: -1.3rem;
+  right: 0;
+}
+
+.heroname h1 {
+  color: #fff;
+  line-height: 1;
+  font-size: 5.5rem;
+}
+
+.main {
+  padding: 20px;
+}
+
+.control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.control-button {
+  background-color: #9c1e14;
+  padding: 12px 20px;
+  border-radius: 20px;
+  display: flex;
+  gap: 2px;
+}
+
+.control-button a {
+  display: block;
+  background-image: url(images/arrow.png);
+  height: 50px;
+  width: 30px;
+}
+
+.control-button a.prev {
+  background-position: 0 -15px;
+}
+
+.control-button a.next {
+  background-position: 30px -15px;
+}
+
+.control-button a:hover {
+  background-position-y: -95px;
+}
+

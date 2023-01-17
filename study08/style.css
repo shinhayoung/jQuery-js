@@ -1,0 +1,128 @@
+/*Reset*/
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+h1 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*Layout*/
+.l_wrapper {
+  width: 950px;
+  margin: 100px auto;
+}
+
+/*Component*/
+body {
+  background-color: #212121;
+}
+
+.container {
+  background-color: #000;
+  border-radius: 70px;
+  padding: 50px;
+}
+
+.adobe {
+  display: flex;
+  justify-content: space-between;
+}
+
+.adobe li {
+  background-color: #1c1c1d;
+  width: 150px;
+  height: 150px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.adobe-cover {
+  width: 50px;
+  height: 50px;
+  display: none;
+}
+
+.adobe-cover.active {
+  width: 80px;
+  height: 80px;
+}
+
+.balloon {
+  background-color: #fff;
+  border-radius: 40px;
+  padding: 30px 50px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.balloon::after {
+  content: ' ';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -20px;
+  left: 55px;
+  border-width: 0 20px 20px 20px;
+  border-style: solid;
+  border-color: #fff transparent;
+}
+
+.balloon h1 {
+  font-size: 45px;
+  font-weight: 700;
+  color: #51b3ee;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+
+.nav {
+  background-color: #9d1f14;
+  padding: 15px 20px;
+  display: flex;
+  border-radius: 25px;
+  width: 70px;
+  justify-content: center;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+.nav .prev, .nav .next {
+  width: 32px;
+  height: 50px;
+  background-image: url(images/nav.png);
+  cursor: pointer;
+}
+
+.nav .prev { 
+  background-position: 0 -15px;
+}
+
+.nav .next {
+  background-position: 32px -15px;
+}
+
+.nav .prev:hover {
+  background-position: 0 -95px;
+}
+
+.nav .next:hover {
+  background-position: 32px -95px;
+}
